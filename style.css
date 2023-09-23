@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Roboto_bold;
+  src: url("./fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e2787;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: white;
+  margin: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.contact-form button {
+  background-color: #fc8eac;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: Roboto, serif;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #ff8e8e;
+  padding: 1rem;
+}
+
+.contact-form label {
+  font-family: Roboto, serif;
+  margin: 0.5rem 0;
+}
+
+.contact-form input {
+  margin: 0.5rem 0;
+  padding: 0.6rem 9rem 0.6rem 0;
+  border: 1px solid rgba(169, 169, 169, 0.7);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contact-form legend {
+  font-family: Roboto_bold, serif;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.contact-form textarea {
+  margin: 0.5rem 0;
+
+  resize: none;
+  border: 1px solid rgba(169, 169, 169, 0.7);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contact-form textarea::placeholder {
+  font-family: Roboto, serif;
+  font-size: 0.78rem;
+}
+
+.info {
+  p {
+    color: white;
+    font-family: Roboto, serif;
+  }
+}
+
+.get-in-touch {
+  margin: 1rem;
+  padding: 1rem;
+  h1 {
+    color: #fc8eac;
+    font-family: Roboto_bold, serif;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.mail {
+  margin: 1rem;
+  padding: 1rem;
+  h5 {
+    color: #fc8eac;
+    letter-spacing: 2px;
+  }
+}
+
+.phone {
+  margin: 1rem;
+  padding: 1rem;
+  h5 {
+    color: #fc8eac;
+    letter-spacing: 2px;
+  }
+}
+
+.address {
+  margin: 1rem;
+  padding: 1rem;
+  h5 {
+    color: #fc8eac;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
